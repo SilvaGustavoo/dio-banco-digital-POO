@@ -8,6 +8,7 @@ import java.util.TreeSet;
 
 import com.Cliente;
 import com.ContaCorrente;
+import com.ContaPoupanca;
 import com.Parcela;
 
 import util.Conta;
@@ -44,8 +45,8 @@ public class Main {
 
         //Cliente cliente = new Cliente("Gustavo S", "12345678950", "31/12/2005");
 
-        ContaCorrente contaCorrente = new ContaCorrente(cliente);
-        Optional<Conta> contaPoupanca = Optional.of(new Conta(cliente));
+        Conta contaCorrente = new ContaCorrente(cliente);
+        Optional<Conta> contaPoupanca = Optional.of(new ContaPoupanca(cliente));
 
         // Deposito na conta corrente
         System.out.print("Vamos Fazer um depósito, digite o valor: ");

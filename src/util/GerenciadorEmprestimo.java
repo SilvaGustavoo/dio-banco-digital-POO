@@ -78,7 +78,7 @@ public class GerenciadorEmprestimo {
         }
 
         List<Emprestimo> emprestimosList = new ArrayList<>(emprestimos);
-        emprestimosList.stream().sorted(Comparator.comparing(Emprestimo::getNumEmprestimo)).toList();
+        emprestimosList.stream().sorted(Comparator.comparing(Emprestimo::getNumEmprestimo));
         return emprestimosList.get(numeroEmprestimo);
 
     }
@@ -101,6 +101,8 @@ public class GerenciadorEmprestimo {
 
 
         List<Emprestimo> emprestimosList = new ArrayList<>(emprestimos);
+        emprestimosList.stream().sorted(Comparator.comparing(Emprestimo::getNumEmprestimo)).toList();
+
         return emprestimosList.get(numeroEmprestimo);
     }
     
