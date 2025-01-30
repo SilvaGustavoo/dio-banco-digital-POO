@@ -66,7 +66,11 @@ public Emprestimo acessarEmprestimo(int numeroEmprestimo) throws ExceptionEmpres
 protected void gerarEmprestimo(Emprestimo emprestimo) { ... }
 
 ```
+
+> *Parcela 5 : 309,55 <br>Data de Vencimento: Mon Jul 14 17:20:36 BRT 2025 <br>Data de Pagamento: Thu Jan 30 17:20:38 BRT 2025 <br>Situação: Pagp*
  
+### *Exceptions em uso*
+
 Para esse projeto foram criadas duas Exceptions personalizadas sendo elas `ExceptionSaldoInsuficiente` para caso o usuario tente movimentar um valor insuficiente em sua conta. E a `ExceptionEmprestimoInexistente` para quando for realizado quaisquer tipos de ações de emprestimos, sem que exista algum. Além disso foi realizado também o tratamento da Exceção `ParseException` para entradas de datas.
 
 ```java
@@ -77,14 +81,15 @@ public class ExceptionEmprestimoInexistente extends Exception{ ... }
 public class ExceptionSaldoInsuficiente extends Exception{ ...}
 
 ```
+### *Bibliotecas Utilizadas* 
 
 Concluindo, foram utilizadas as demais bibliotecas ao longo do coódigo:
-* Scanner para leitura de dados, 
-* List e Set para armazenamento de dados, 
-* Calendar, LocalDate e Date para manipulação de datas
-* Comparator para ordenação das parcelas
-* Optional para manipular dados que podem crashar o código
-* Stream API, para encurtar códigos e ordenar listas
+* **Scanner** para leitura de dados, 
+* **List e Set** para armazenamento de dados, 
+* **Calendar, LocalDate e Date** para manipulação de datas
+* **Comparator** para ordenação das parcelas
+* **Optional** para manipular dados que podem crashar o código
+* **Stream API** para encurtar códigos e ordenar listas
 
 ```java
 
